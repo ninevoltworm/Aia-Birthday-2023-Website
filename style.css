@@ -1,0 +1,27 @@
+#background {
+    
+    
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    background-image: linear-gradient(rgb(250, 58, 148), rgb(255, 26, 95));
+    align-items: center;
+    display: flex; 
+}
+
+#proj_frame {
+    width: 1300px;
+    height: 720px;
+    overflow: hidden;
+    border-style: dotted;
+}
+
+iframe {
+
+    position: relative;
+    margin: auto;
+    
+}
+
+
+
