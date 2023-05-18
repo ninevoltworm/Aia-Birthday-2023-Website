@@ -4,24 +4,66 @@
     width: 100%;
     height: 100%;
     background-color: red;
-    background-image: linear-gradient(rgb(250, 58, 148), rgb(255, 26, 95));
+    background-image: linear-gradient(rgb(255, 120, 183), rgb(255, 91, 140));
     align-items: center;
     display: flex; 
+    overflow:hidden;
 }
 
-#proj_frame {
-    width: 1300px;
-    height: 720px;
-    overflow: hidden;
-    border-style: dotted;
-}
-
-iframe {
-
-    position: relative;
-    margin: auto;
+#frame {
+    width: 100%;
+    height: 100%;
     
+    margin: auto;
+    background: url("assets/mock_comp.png");
+    background-position: center; 
+    
+    align-items: center;
+    display: flex; 
+
 }
 
+@media (min-width: 1280px) {
+    #holder {
+        width: 1280px;
+        height: 720px;
+        
+        scale: 50%;
+        
+        position: relative;
+        margin: auto;
+        
+        transition: scale .35s;
+        border: dotted;
+    }
+    
+    #holder:hover {
+        scale: 100%;
+    }
+    
+    iframe {
+        width:100%;
+        height:100%;
+    }
+}
 
-
+@media (max-width: 1279px) {
+    #holder {
+        width: 1280px;
+        height: 720px;
+        
+        scale: 100%;
+        position:static;
+        border: dotted;
+        transition: scale .5s;
+    }
+    
+    iframe {
+        width:1280px;
+        height:720px;
+    
+    }
+    #background {
+        overflow:scroll;    
+    }
+}
