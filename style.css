@@ -54,6 +54,9 @@ html{
     scale: 100%;
 }
 
+#holder:target {
+    scale: 100%;
+}
 
 /* Top Banner */
 #top_box {
@@ -98,16 +101,38 @@ html{
     position:absolute;
     transition: transform 0.35s;
     transform-origin: 50%  80%;
-    -webkit-filter: drop-shadow(4px 4px 0 rgb(255, 78, 107)) drop-shadow(-4px -4px 0 rgb(255, 78, 107));
-    filter:drop-shadow(4px 4px 0 rgb(255, 78, 107)) drop-shadow(-4px -4px 0 rgb(255, 78, 107));
-    image-rendering: pixelated;
+    /* image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
+    image-rendering: crisp-edges; */
 }
 
 .prop:hover {
     transform: scale(1.05) rotate(-2.5deg);
 
+}
+
+.prop_desc {
+    position:absolute;
+    transition: width 0.15s;
+    overflow:hidden;
+    width: 0px;
+    
+    white-space: nowrap;
+    color:rgb(185, 148, 68);
+    font-family: 'Comic Sans MS';
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(255, 255, 189);
+    border-radius: 25px;
+    border: 3px rgb(255, 255, 189);
+}
+
+.prop:hover .prop_desc {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 189);
+    border-radius: 25px;
+    border: 3px rgb(255, 255, 189);
 }
 
 /* Set To Larger Style */
