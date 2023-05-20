@@ -5,7 +5,11 @@ html{
     margin-top: -10%;
     transform: scale(0.5);
     transition: transform 0.5s;
-    background-image: linear-gradient(rgb(255, 120, 183), rgb(255, 91, 140));
+    background: url("assets/wallpaper.png");
+    background-image: #ffebf2;
+    background-repeat: repeat-x;
+    background-size: 1920px 100%;
+    background-position: 50% 50%;
 }
 
 #background {
@@ -25,10 +29,11 @@ html{
     margin: auto;
     background: url("assets/mock_comp.png");
     background-position: center; 
-    
+    background-repeat: no-repeat;
     align-items: center;
     display: flex; 
     overflow:hidden;
+
 }
 
 
@@ -64,7 +69,11 @@ html{
     font-size: 2.5rem;
     text-shadow: -2px 2px rgb(255, 78, 107),
                 -4px 4px rgb(255, 56, 89),
-                -6px 6px rgb(255, 33, 70)
+                -6px 6px rgb(255, 33, 70),
+                1px -1px rgb(255, 78, 107),
+                1px -1px rgb(255, 78, 107),
+                0px 1px rgb(255, 78, 107),
+                -1px -1px rgb(255, 78, 107)
 }
 
 /* Props (Aiadmirers) */
@@ -80,6 +89,8 @@ html{
     position:absolute;
     transition: transform 0.5s;
     transform-origin: 50%  80%;
+    -webkit-filter: drop-shadow(4px 4px 0 rgb(255, 78, 107)) drop-shadow(-4px -4px 0 rgb(255, 78, 107));
+    filter:drop-shadow(4px 4px 0 rgb(255, 78, 107)) drop-shadow(-4px -4px 0 rgb(255, 78, 107));
     
 }
 
