@@ -6,9 +6,9 @@ html{
     transform: scale(0.5);
     transition: transform 0.5s;
     background: url("assets/wallpaper.png");
-    background-image: #ffebf2;
+    background-color: rgb(255, 235, 242);
     background-repeat: repeat-x;
-    background-size: 1920px 100%;
+    background-size: 960px 420px;
     background-position: 50% 50%;
 }
 
@@ -67,13 +67,22 @@ html{
     color:white;
     font-family: 'Comic Sans MS';
     font-size: 2.5rem;
-    text-shadow: -2px 2px rgb(255, 78, 107),
-                -4px 4px rgb(255, 56, 89),
-                -6px 6px rgb(255, 33, 70),
+    text-shadow: -1px 1px rgb(255, 78, 107),
+                -2px 2px rgb(255, 56, 89),
+                -3px 3px rgb(255, 33, 70),
                 1px -1px rgb(255, 78, 107),
                 1px -1px rgb(255, 78, 107),
                 0px 1px rgb(255, 78, 107),
                 -1px -1px rgb(255, 78, 107)
+}
+
+#top_text {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    /* border:dotted; */
 }
 
 /* Props (Aiadmirers) */
@@ -87,15 +96,17 @@ html{
 
 .prop {
     position:absolute;
-    transition: transform 0.5s;
+    transition: transform 0.35s;
     transform-origin: 50%  80%;
     -webkit-filter: drop-shadow(4px 4px 0 rgb(255, 78, 107)) drop-shadow(-4px -4px 0 rgb(255, 78, 107));
     filter:drop-shadow(4px 4px 0 rgb(255, 78, 107)) drop-shadow(-4px -4px 0 rgb(255, 78, 107));
-    
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 .prop:hover {
-    transform: scale(1.1) rotate(-5deg);
+    transform: scale(1.05) rotate(-2.5deg);
 
 }
 
@@ -108,6 +119,8 @@ html{
         margin-top: 0%;
         transform: scale(1);
         transition: transform 0.5s, width 0.5s, margin-left 0.5s;
+        background-size: 1920px 840px;
+        background-image: rgb(255, 235, 242);
     }
 
     #holder {
