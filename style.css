@@ -32,10 +32,21 @@ html{
     background-repeat: no-repeat;
     align-items: center;
     display: flex; 
-    overflow:hidden;
-
+    overflow:visible;
+    flex-direction: row;
 }
 
+#holder_left {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#holder_right {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
 
 /* Game Holder & Hover Scaling */
 #holder {
@@ -46,6 +57,7 @@ html{
     
     position: relative;
     margin: auto;
+    z-index:10;
     
     transition: scale .35s;
 }
@@ -87,8 +99,8 @@ html{
     flex-direction: column;
 }
 
-/* Props (Aiadmirers) */
-#prop_box {
+/* Currently Unused */
+#btm_box {
     width: 1280px;
     height: 0;
     overflow:visible;
@@ -96,6 +108,7 @@ html{
     margin: auto;
 }
 
+/* Props (Aiadmirers) */
 .prop {
     position:absolute;
     transition: transform 0.35s;
