@@ -2,7 +2,7 @@ html{
     width: 200%;
     height: 140%;
     margin-left: -50%;
-    margin-top: -10%;
+    margin-top: -20%;
     transform: scale(0.5);
     transition: transform 0.5s;
     background: url("assets/wallpaper.png");
@@ -21,7 +21,7 @@ html{
     flex-direction: column-reverse;
 }
 
-/* All content is framed in this */
+/* Iframe content is framed in this, within computer graphic */
 #frame {
     width: 100%;
     height: 100%;
@@ -85,7 +85,6 @@ html{
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    /* border:dotted; */
 }
 
 /* Props (Aiadmirers) */
@@ -101,7 +100,6 @@ html{
     position:absolute;
     transition: transform 0.35s;
     transform-origin: 50%  80%;
-    /* image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges; */
 }
