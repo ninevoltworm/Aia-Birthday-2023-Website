@@ -1,8 +1,8 @@
 html{
     width: 200%;
-    height: 140%;
+    height: 920px;
     margin-left: -50%;
-    margin-top: -20%;
+    margin-top: -200px;
     transform: scale(0.5);
     transition: transform 0.5s;
     background: url("assets/wallpaper.png");
@@ -19,6 +19,7 @@ html{
     display: flex; 
     overflow:hidden;
     flex-direction: column-reverse;
+    z-index: -20;
 }
 
 /* Iframe content is framed in this, within computer graphic */
@@ -89,7 +90,8 @@ html{
                 2px -2px white,
                 0px 2px white,
                 -2px 0px white,
-                -2px -2px white
+                -2px -2px white;
+    z-index: 5;
 }
 
 #top_text {
@@ -107,6 +109,7 @@ html{
     background-color: rgb(255, 235, 242);
     border-radius: 25px;
     border: 3px rgb(255, 235, 242);
+    
 }
 
 /* Currently Unused */
@@ -179,8 +182,5 @@ html{
 /* Remove Default Margines */
 body {
     margin: 0;
-    display: flexbox;
-    align-items: center;
-    justify-content: center;
     
 }
