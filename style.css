@@ -83,7 +83,7 @@ html{
     align-content: center;
     color:rgb(255, 148, 176);
     font-family: "Sofia", sans-serif;
-    font-size: 3.85rem;
+    font-size: 3.5rem;
     text-shadow: -1px 1px white,
                 -2px 2px white,
                 -3px 3px white,
@@ -169,7 +169,7 @@ html{
         margin-top: 0%;
         transform: scale(1);
         transition: transform 0.5s, width 0.5s, margin-left 0.5s;
-        background-size: 1920px 840px;
+        background-size: 1400px 840px;
         background-image: rgb(255, 235, 242);
     }
 
